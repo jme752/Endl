@@ -1,8 +1,8 @@
-import { AfterViewInit, Component } from "@angular/core"
+import { AfterViewInit, Component } from '@angular/core'
 // import { LeafletMouseEvent, Map, Marker, circle, latLng, map, marker, polygon, tileLayer } from 'leaflet';
 import * as L from 'leaflet'
 
-@Component({    
+@Component({
     selector: 'app-map',
     templateUrl: './map.component.html',
     styleUrls: ['./map.component.css'],
@@ -10,7 +10,7 @@ import * as L from 'leaflet'
 export class MapComponent {
     private markers: L.Marker[] = [L.marker([48.3018, 9.97607])]
     private map: L.Map = {} as L.Map
-    public cursor: string = "pointer"
+    public cursor: string = 'pointer'
 
     public options = {
         layers: [

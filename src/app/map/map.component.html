@@ -1,8 +1,8 @@
-<div style="height: 100vh;"
-     leaflet 
-     [leafletOptions]="options"
-     [leafletLayers]="layers"
-     >
-</div>
-    <!--[leafletLayersControl]="layersControl"
-    (leafletClick)="setMarker()" -->
+<div
+    class="map"
+    [style.cursor]="cursor"
+    leaflet
+    [leafletOptions]="options"
+    (leafletMapReady)="onMapReady($event)"
+    (leafletClick)="setMarker($event)"
+></div>
